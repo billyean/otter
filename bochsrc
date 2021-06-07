@@ -1,0 +1,20 @@
+
+megs: 32
+
+# filename of ROM images
+romimage: file=/home/haibo/Open/bochs-2.6.11/bios/BIOS-bochs-latest
+vgaromimage: file=/home/haibo/Open/bochs-2.6.11/bios/VGABIOS-lgpl-latest
+
+# what disk images will be used
+floppya: 1_44=boot.img, status=inserted
+
+# choose the boot disk.
+boot: floppy
+
+mouse: enabled=0
+
+# enable key mapping, using US layout as default.
+keyboard: type=mf, serial_delay=200, paste_delay=100000
+
+# enable sound
+sound: driver=default, waveout=/dev/dsp
